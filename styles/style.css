@@ -1,13 +1,26 @@
+header, main, footer {
+    border: 1px solid #000000;
+}
+
 header h1{
     text-align: center;
     font-size: 3em;
 }
-header div{
+
+header div.links{
     display: flex;
     justify-content: center;
+    width: 100%;
 }
-header a.head:link{
-    width:300px;
+
+body a.github-corner{
+    position:sticky;
+    left:100%;
+}
+
+
+header a.head{
+    width:380px;
     height:25px;
     border-radius: 0;
     border:1px solid lightcyan;
@@ -18,11 +31,44 @@ header a.head:link{
     text-decoration: none;
     text-align: center;
     font-family:Arial;
+    font-size: larger;
 }
-header a.head:hover{
-    text-decoration: underline;
+
+header a.head::before{
+    content: " - ";
 }
+header a.head::after{
+    content: " - ";
+}
+
 header a.head:visited{
     border: 1px solid lightblue;
     background-color: rgb(173, 230, 216);
+}
+
+header a.head:hover{
+    text-decoration: underline;
+}
+
+header a.head:hover::before{
+    content: " -- ";
+}
+
+header a.head:hover::after{
+    content: " -- ";
+}
+
+header a.head:active{
+    transform: translateY(5px);
+    color: white;
+    border: 1px solid white;
+    background-color: black;
+}
+
+header a.head:active::before{
+    content: " --- ";
+}
+
+header a.head:active::after{
+    content: " --- ";
 }
