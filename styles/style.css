@@ -72,3 +72,11 @@ header a.head:active::before{
 header a.head:active::after{
     content: " --- ";
 }
+footer{
+    background-color: #000000;
+}
+details summary, details{
+    font-weight: 900;
+    color: white;
+    text-align:center;
+}
