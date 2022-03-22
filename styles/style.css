@@ -1,5 +1,6 @@
 body{
     padding: 0;
+    margin:0;
 }
 header, main, footer {
     border: 1px solid #000000;
