@@ -85,3 +85,8 @@ details summary, details{
     color: white;
     text-align:center;
 }
+@media (max-width:768px) {
+    header a.head{
+        width:100%
+    }
+}
