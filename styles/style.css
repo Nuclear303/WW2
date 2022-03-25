@@ -121,3 +121,6 @@ a.dropdown-item{
     font-family:Arial;
     font-size: larger;
 }
+div.dropdown > *::selection{
+    background-color:transparent;
+}
