@@ -10,6 +10,7 @@ header, main, footer {
 header h1{
     text-align: center;
     font-size: 3em;
+    color: white;
 }
 
 header nav.links{
@@ -54,8 +55,6 @@ header a.head:visited{
 header a.head:hover{
     text-decoration: underline;
     background-color: rgb(177, 199, 193);
-    border-radius: 6px;
-    
 }
 
 header a.head:hover::before{
