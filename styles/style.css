@@ -54,6 +54,8 @@ header a.head:visited{
 header a.head:hover{
     text-decoration: underline;
     background-color: rgb(177, 199, 193);
+    border-radius: 6px;
+    
 }
 
 header a.head:hover::before{
@@ -78,6 +80,17 @@ header a.head:active::before{
 header a.head:active::after{
     content: " --- ";
 }
+main{
+    color: white;
+}
+main h1{
+    text-align: center;
+}
+main h5{
+    text-align: justify;
+}
+
+
 footer{
     background-color: #000000;
 }
