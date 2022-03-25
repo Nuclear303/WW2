@@ -26,7 +26,7 @@ body a.github-corner{
 }
 
 
-header a.head{
+header .head{
     width:20%;
     height:40px;
     border-radius: 0;
@@ -41,42 +41,42 @@ header a.head{
     flex-grow: 1;
 }
 
-header a.head::before{
+header .head::before{
     content: " - ";
 }
-header a.head::after{
+header .head::after{
     content: " - ";
 }
 
-header a.head:visited{
+header .head:visited{
     background-color: rgb(173, 230, 216);
 }
 
-header a.head:hover{
+header .head:hover{
     text-decoration: underline;
     background-color: rgb(177, 199, 193);
 }
 
-header a.head:hover::before{
+header .head:hover::before{
     content: " -- ";
 }
 
-header a.head:hover::after{
+header .head:hover::after{
     content: " -- ";
 }
 
-header a.head:active{
+header .head:active{
     transform: translateY(5px);
     color: white;
     border: 1px solid white;
     background-color: black;
 }
 
-header a.head:active::before{
+header .head:active::before{
     content: " --- ";
 }
 
-header a.head:active::after{
+header .head:active::after{
     content: " --- ";
 }
 main{
@@ -110,4 +110,14 @@ details summary, details{
 }
 fieldset{
     color: white;
+}
+ul.dropdown-menu, a.dropdown-item{
+    background-color:lightblue;
+}
+a.dropdown-item{
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    font-family:Arial;
+    font-size: larger;
 }
