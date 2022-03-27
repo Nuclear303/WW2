@@ -1,7 +1,7 @@
 body{
     padding: 0;
     margin:0;
-    background-image: url(https://4.bp.blogspot.com/-7e5i3gvf-o4/UdFpAi0GJfI/AAAAAAAAFN0/dt41gu945l0/s256/black-groove-stripes-repeating-background.jpg);
+    background-image: url(../media/background.png);
 }
 header, main, footer {
     border: 1px solid #000000;
