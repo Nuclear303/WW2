@@ -88,8 +88,6 @@ main h1{
 main h5{
     text-align: justify;
 }
-
-
 footer{
     background-color: #000000;
 }
@@ -124,3 +122,4 @@ a.dropdown-item{
 div.dropdown > *::selection{
     background-color:transparent;
 }
+
