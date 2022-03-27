@@ -2,3 +2,14 @@ legend{
     float: none; 
     padding: inherit; 
 }
+fieldset{
+    display: flex;
+}
+fieldset img{
+    float: left;
+    margin-right: 125px;
+}
+fieldset div{
+    float: right;
+    font-size: x-large;
+}
