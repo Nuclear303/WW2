@@ -1,7 +1,7 @@
 body{
     padding: 0;
     margin:0;
-    background-image: url(../media/background.png);
+    background-image: url(https://4.bp.blogspot.com/-7e5i3gvf-o4/UdFpAi0GJfI/AAAAAAAAFN0/dt41gu945l0/s256/black-groove-stripes-repeating-background.jpg);
 }
 header, main, footer {
     border: 1px solid #000000;
@@ -28,12 +28,12 @@ body a.github-corner{
 
 header .head{
     width:20%;
-    height:40px;
+    height: 2.5rem;
     border-radius: 0;
     background-color:lightblue;
-    padding: 10px;
+    padding: 0.625rem;
     margin: 0;
-    line-height:20px;
+    line-height:1.25rem;
     text-decoration: none;
     text-align: center;
     font-family:Arial;
@@ -41,42 +41,42 @@ header .head{
     flex-grow: 1;
 }
 
-header .head::before{
+header a.head::before{
     content: " - ";
 }
-header .head::after{
+header a.head::after{
     content: " - ";
 }
 
-header .head:visited{
+header a.head:visited, div.drop a:visited{
     background-color: rgb(173, 230, 216);
 }
 
-header .head:hover{
-    text-decoration: underline;
+header a.head:hover{
+    /* text-decoration: underline; */
     background-color: rgb(177, 199, 193);
 }
 
-header .head:hover::before{
+header a.head:hover::before{
     content: " -- ";
 }
 
-header .head:hover::after{
+header a.head:hover::after{
     content: " -- ";
 }
 
-header .head:active{
-    transform: translateY(5px);
+header a.head:active{
+    transform: translateY(0.3125rempx);
     color: white;
     border: 1px solid white;
     background-color: black;
 }
 
-header .head:active::before{
+header a.head:active::before{
     content: " --- ";
 }
 
-header .head:active::after{
+header a.head:active::after{
     content: " --- ";
 }
 main{
@@ -96,30 +96,54 @@ details summary, details{
     color: white;
     text-align:center;
 }
-@media (max-width:1080px) {
+@media (max-width:67.5rem) {
     header .head{
         width:50%;
     }
+    div.drop ul{
+        width:50%
+    }
 }
-@media (max-width:768px) {
+@media (max-width:48rem) {
     header .head{
         width:100%;
+    }
+    div.drop ul{
+        width:100%
     }
 }
 fieldset{
     color: white;
 }
-ul.dropdown-menu, a.dropdown-item{
-    background-color:lightblue;
+
+div.drop{
+    padding:0.625rem 0 0.625rem 0;
+    color:#0a58ca;
 }
-a.dropdown-item{
-    margin: 0;
-    text-decoration: none;
-    text-align: center;
-    font-family:Arial;
-    font-size: larger;
-}
-div.dropdown > *::selection{
+div.drop  *::selection{
     background-color:transparent;
 }
-
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+div.drop li{
+    list-style: none;
+    text-align: center;
+}
+div.drop li > a{
+    text-decoration: none;
+}
+div.drop > ul{
+    background-color:lightblue; 
+    opacity: 0;
+    padding: 0.3125rem;
+    border-radius: 0.625rem;
+}
+div.drop:hover > ul{
+    animation: appear 1.5s 0.3s forwards;
+}
