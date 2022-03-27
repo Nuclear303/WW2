@@ -145,5 +145,5 @@ div.drop > ul{
     border-radius: 0.625rem;
 }
 div.drop:hover > ul{
-    animation: appear 1.5s 0.3s forwards;
+    animation: appear 1s 0.1s forwards;
 }
