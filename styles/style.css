@@ -100,16 +100,10 @@ details summary, details{
     header .head{
         width:50%;
     }
-    div.drop ul{
-        width:50%
-    }
 }
 @media (max-width:48rem) {
     header .head{
         width:100%;
-    }
-    div.drop ul{
-        width:100%
     }
 }
 fieldset{
