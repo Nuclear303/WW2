@@ -13,3 +13,9 @@ fieldset div{
     float: right;
     font-size: x-large;
 }
+@media (max-width:1080px){
+    fieldset{
+        font-size: 10px;
+        display:block;
+    }
+}
