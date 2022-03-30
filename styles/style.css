@@ -1,23 +1,61 @@
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes slideLeftToCenter{
+    0%{
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideRightToCenter{
+    0%{
+        transform: translateX(100%);
+        opacity:1;
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes fontRise{
+    0%{
+        font-size: 0rem;
+    }
+    100%{
+        font-size: 3rem;
+    }
+}
+
 body{
     padding: 0;
     margin:0;
     background-image: url(../media/background.png);
 }
-header, main, footer {
+main, footer {
     border: 1px solid #000000;
 }
 
 header h1{
+    height: 3rem;
     text-align: center;
     font-size: 3em;
     color: white;
+    animation: fontRise 1.5s 0.1s ease forwards;
 }
 
 header nav.links{
     display: flex;
     justify-content: center;
     width: 100%;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
 }
 
 body a.github-corner{
@@ -41,6 +79,16 @@ header .head{
     flex-grow: 1;
 }
 
+header div.nav{
+    width:40%;
+    flex-grow:1;
+}
+header div.nav-left{
+    animation: slideLeftToCenter 1s 0.1s forwards ease;
+}
+header div.nav-right{
+    animation: slideRightToCenter 1s 0.1s forwards ease;
+}
 header a.head::before{
     content: " - ";
 }
@@ -97,12 +145,18 @@ details summary, details{
     text-align:center;
 }
 @media (max-width:67.5rem) {
-    header .head{
+    header div.drop{
+        width: 100%;
+    }
+    header div.nav > .head{
         width:50%;
     }
 }
 @media (max-width:48rem) {
     header .head{
+        width:100%;
+    }
+    header div.nav > .head{
         width:100%;
     }
 }
@@ -113,18 +167,13 @@ fieldset{
 div.drop{
     padding:0.625rem 0 0.625rem 0;
     color:#0a58ca;
+    opacity: 0;
+    animation: appear 1.5s 0.5s forwards;
 }
 div.drop  *::selection{
     background-color:transparent;
 }
-@keyframes appear{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
+
 div.drop li{
     list-style: none;
     text-align: center;
