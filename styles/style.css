@@ -184,9 +184,11 @@ div.drop li > a{
 div.drop > ul{
     background-color:lightblue; 
     opacity: 0;
+    display:none;
     padding: 0.3125rem;
     border-radius: 0.625rem;
 }
 div.drop:hover > ul{
+    display:block;
     animation: appear 1s 0.1s forwards;
 }
