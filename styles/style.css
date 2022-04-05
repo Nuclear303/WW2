@@ -33,11 +33,11 @@
         font-size: 3rem;
     }
 }
-
 body{
     padding: 0;
     margin:0;
     background-image: url(../media/background.png);
+
 }
 main, footer {
     border: 1px solid #000000;
@@ -195,4 +195,20 @@ div.drop > ul{
 div.drop:hover > ul{
     display:block;
     animation: appear 1s 0.1s forwards;
+}
+
+.navigator{
+    background-color:gray;
+    color:white;
+    padding: 0.3125rem;
+    width:20%;
+    border:3px ridge white;
+}
+.navigator a{
+    color:white;
+    text-decoration: none;
+}
+
+.navigator a:hover{
+    color:rgb(200, 200, 200);
 }
