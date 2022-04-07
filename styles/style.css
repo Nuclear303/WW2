@@ -172,6 +172,7 @@ div.drop{
     color:white;
     opacity: 0;
     animation: appear 1.5s 0.5s forwards;
+    z-index: 9999;
 }
 div.drop  *::selection{
     background-color:transparent;
@@ -191,6 +192,7 @@ div.drop > ul{
     display:none;
     padding: 0.3125rem;
     border-radius: 0.625rem;
+    
 }
 div.drop:hover > ul{
     display:block;
@@ -201,8 +203,9 @@ div.drop:hover > ul{
     background-color:gray;
     color:white;
     padding: 0.3125rem;
-    width:20%;
+    width:auto;
     border:3px ridge white;
+    display:inline-block;
 }
 .navigator a{
     color:white;
