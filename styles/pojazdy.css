@@ -1,0 +1,21 @@
+legend{
+    float: none; 
+    padding: inherit; 
+}
+fieldset{
+    display: flex;
+}
+fieldset img{
+    float: left;
+    margin-right: 125px;
+}
+fieldset div{
+    float: right;
+    font-size: x-large;
+}
+@media (max-width:56.25vw){
+    fieldset{
+        font-size: 10px;
+        display:block;
+    }
+}
