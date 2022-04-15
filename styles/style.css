@@ -1,23 +1,64 @@
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes slideLeftToCenter{
+    0%{
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideRightToCenter{
+    0%{
+        transform: translateX(100%);
+        opacity:1;
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes fontRise{
+    0%{
+        font-size: 0rem;
+    }
+    100%{
+        font-size: 3rem;
+    }
+}
 body{
     padding: 0;
     margin:0;
     background-image: url(../media/background.png);
+
 }
-header, main, footer {
+main, footer {
     border: 1px solid #000000;
 }
 
+footer summary{
+    list-style: none;
+}
 header h1{
+    height: 3.2rem;
     text-align: center;
-    font-size: 3em;
+    font-size: 3rem;
     color: white;
+    animation: fontRise 1.5s 0.1s ease forwards;
 }
 
 header nav.links{
     display: flex;
     justify-content: center;
     width: 100%;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
 }
 
 body a.github-corner{
@@ -25,12 +66,12 @@ body a.github-corner{
     left:100%;
 }
 
-
 header .head{
     width:20%;
     height: 2.5rem;
     border-radius: 0;
-    background-color:lightblue;
+    background-color:gray;
+    color:white;
     padding: 0.625rem;
     margin: 0;
     line-height:1.25rem;
@@ -39,8 +80,19 @@ header .head{
     font-family:Arial;
     font-size: larger;
     flex-grow: 1;
+
 }
 
+header div.nav{
+    width:40%;
+    flex-grow:1;
+}
+header div.nav-left{
+    animation: slideLeftToCenter 1s 0.1s forwards ease;
+}
+header div.nav-right{
+    animation: slideRightToCenter 1s 0.1s forwards ease;
+}
 header a.head::before{
     content: " - ";
 }
@@ -49,12 +101,11 @@ header a.head::after{
 }
 
 header a.head:visited, div.drop a:visited{
-    background-color: rgb(173, 230, 216);
+    background-color: rgb(60, 60, 60);
 }
 
 header a.head:hover{
-    /* text-decoration: underline; */
-    background-color: rgb(177, 199, 193);
+    color: white;
 }
 
 header a.head:hover::before{
@@ -66,7 +117,7 @@ header a.head:hover::after{
 }
 
 header a.head:active{
-    transform: translateY(0.3125rempx);
+    transform: translateY(0.3125rem);
     color: white;
     border: 1px solid white;
     background-color: black;
@@ -97,19 +148,19 @@ details summary, details{
     text-align:center;
 }
 @media (max-width:67.5rem) {
-    header .head{
-        width:50%;
+    header div.drop{
+        width: 100%;
     }
-    div.drop ul{
-        width:50%
+    header div.nav > .head{
+        width:50%;
     }
 }
 @media (max-width:48rem) {
     header .head{
         width:100%;
     }
-    div.drop ul{
-        width:100%
+    header div.nav > .head{
+        width:100%;
     }
 }
 fieldset{
@@ -118,32 +169,48 @@ fieldset{
 
 div.drop{
     padding:0.625rem 0 0.625rem 0;
-    color:#0a58ca;
+    color:white;
+    opacity: 0;
+    animation: appear 1.5s 0.5s forwards;
+    z-index: 9999;
 }
 div.drop  *::selection{
     background-color:transparent;
 }
-@keyframes appear{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
+
 div.drop li{
     list-style: none;
     text-align: center;
 }
 div.drop li > a{
     text-decoration: none;
+    color: white;
 }
 div.drop > ul{
-    background-color:lightblue; 
+    background-color:gray; 
     opacity: 0;
+    display:none;
     padding: 0.3125rem;
     border-radius: 0.625rem;
 }
 div.drop:hover > ul{
+    display:block;
     animation: appear 1s 0.1s forwards;
+}
+
+.navigator{
+    background-color:gray;
+    color:white;
+    padding: 0.3125rem;
+    width:auto;
+    border:3px ridge white;
+    display:inline-block;
+}
+.navigator a{
+    color:white;
+    text-decoration: none;
+}
+
+.navigator a:hover{
+    color:rgb(200, 200, 200);
 }
