@@ -1,0 +1,45 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+figcaption a{
+    color:white;
+}
+figure{
+    border:3px solid black;
+    width:25%;
+    height:25%;
+}
+figcaption{
+    text-align:center;
+    font-style: italic;
+    font-weight: bold;
+}
+.person{
+    width: 12.5%;
+}
+@media (max-width: 67.5rem){
+    figure{
+        width:50%;
+    }
+    img{
+        height:25%;
+        width: auto;
+    }
+    .person{
+        width: 25%;
+    }
+}
+@media (max-width: 48rem){
+    figure{
+        width:100%;
+    }
+    .person{
+        width: 100%;
+    }
+}
+img{
+    width:100%;
+    height:100%;
+}
