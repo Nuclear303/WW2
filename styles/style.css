@@ -205,6 +205,8 @@ div.drop:hover > ul{
     width:auto;
     border:3px ridge white;
     display:inline-block;
+    position: sticky;
+    top:20px;
 }
 .navigator a{
     color:white;
