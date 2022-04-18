@@ -10,6 +10,8 @@ fieldset img{
     margin-right: 7.8125rem;
     width:50%;
     height: 50%;
+    margin-top:auto ;
+    margin-bottom:auto ;
 }
 fieldset div{
     float: right;
