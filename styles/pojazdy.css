@@ -1,6 +1,5 @@
 legend{
     float: none; 
-    padding: inherit; 
     color:white;
 }
 fieldset{
@@ -8,20 +7,27 @@ fieldset{
 }
 fieldset img{
     float: left;
-    margin-right: 125px;
+    margin-right: 7.8125rem;
+    width:50%;
+    height: 50%;
 }
 fieldset div{
     float: right;
     font-size: x-large;
+    width:50%;
 }
-@media (max-width:67.5rem){
+@media (max-width:55rem){
     fieldset{
-        font-size: 10px;
+        font-size: 0.625rem;
         display:block;
     }
     fieldset img{
         float: none;
         display:block;
-        margin:auto;
+        margin-inline:auto;
+        width:100%;
+    }
+    fieldset div{
+        width:100%;
     }
 }
