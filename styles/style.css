@@ -61,11 +61,6 @@ header nav.links{
     flex-wrap: wrap;
 }
 
-body a.github-corner{
-    position:sticky;
-    left:100%;
-}
-
 header .head{
     width:20%;
     height: 2.5rem;
