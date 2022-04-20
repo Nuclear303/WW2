@@ -37,6 +37,10 @@ table.bombs th,table.bombs td{
 #nuke img{
     margin-right:3rem;
 }
+section>h2{
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
 @media (max-width:99rem){
     table *{
         font-size: 1rem;    
