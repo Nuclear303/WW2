@@ -46,7 +46,7 @@ main, footer {
     border: 1px solid #000000;
 }
 
-footer summary{
+summary{
     list-style: none;
 }
 header h1{
@@ -140,7 +140,7 @@ main h5{
 footer{
     background-color: #000000;
 }
-details summary, details{
+footer details summary,footer details{
     font-weight: 900;
     color: white;
     text-align:center;
@@ -213,4 +213,7 @@ div.drop:hover > ul{
 
 .navigator a:hover{
     color:rgb(200, 200, 200);
+}
+.navigator *::selection{
+    background-color:transparent;
 }
