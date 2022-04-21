@@ -1,3 +1,4 @@
+
 legend{
     float: none; 
     color:white;
@@ -37,8 +38,8 @@ table.bombs th,table.bombs td{
     margin-right:3rem;
 }
 section>h2{
-    margin-top: 32px;
-    margin-bottom: 16px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 @media (max-width:99rem){
     table *{
