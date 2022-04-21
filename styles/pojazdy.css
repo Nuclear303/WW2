@@ -7,16 +7,15 @@ fieldset{
 }
 fieldset img{
     float: left;
-    margin-right: 6rem;
-    width:50%;
-    height: 50%;
+    margin-right: 5rem;
+    width:45%;
     margin-top:auto ;
     margin-bottom:auto ;
 }
 fieldset div{
     float: right;
     font-size: x-large;
-    width:50%;
+    width:55%;
 }
 table *{
     font-size: 1.25rem;
