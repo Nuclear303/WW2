@@ -53,8 +53,12 @@ header h1{
     height: 3.2rem;
     text-align: center;
     font-size: 3rem;
-    color: white;
     animation: fontRise 1.5s 0.1s ease forwards;
+}
+header h1 a{
+    background: linear-gradient(45deg, brown 5%,gray 60%);
+    background-clip: text;
+    color: transparent;
 }
 
 header nav.links{
@@ -216,4 +220,11 @@ div.drop:hover > ul{
 }
 .navigator *::selection{
     background-color:transparent;
+}
+/* center a div using top left */
+h5{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
