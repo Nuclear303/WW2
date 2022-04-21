@@ -5,14 +5,14 @@ legend{
 fieldset{
     display: flex;
 }
-fieldset img{
+fieldset > img{
     float: left;
     margin-right: 5rem;
     width:45%;
     margin-top:auto ;
     margin-bottom:auto ;
 }
-fieldset div{
+fieldset > div{
     float: right;
     font-size: x-large;
     width:55%;
@@ -46,7 +46,7 @@ section>h2{
     }
 }
 @media (max-width:82rem){
-    fieldset div{
+    fieldset > div{
         font-size:large;
     }
     table *{
@@ -66,13 +66,13 @@ section>h2{
         font-size: 0.625rem;
         display:block;
     }
-    fieldset img{
+    fieldset > img{
         float: none;
         display:block;
         margin-inline:auto;
         width:100%;
     }
-    fieldset div{
+    fieldset > div{
         width:100%;
     }
     table *{
