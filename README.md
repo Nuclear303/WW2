@@ -12,6 +12,7 @@ Instrukcje do pobrania plików z kodem źródłowym stron
 Zdjęcia oraz niektóre dane:
 https://wikipedia.org
 https://tanks-encyclopedia.com/
+https://www.komputerswiat.pl/artykuly/redakcyjne/samoloty-bojowe-ii-wojny-swiatowej-maszyny-ktore-odegraly-historycznie-wazna-role/r7y37w1
 
 Zdjęcia zostały pobrane ze stron rekomendowanych przez wyszukiwarkę firmy Google Inc., twórcy World War II nie przywłaszczają sobie użytych plików. 
 Wszystkie media wykorzystywane są na licencji Creative Commons oraz Wikimedia Commons
