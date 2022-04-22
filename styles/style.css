@@ -1,3 +1,4 @@
+@import url(../media/Schwabacher.otf);
 @keyframes appear{
     0%{
         opacity: 0;
@@ -106,6 +107,7 @@ header h1 a{
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    font-family:Schwabacher;
 }
 
 header nav.links{
