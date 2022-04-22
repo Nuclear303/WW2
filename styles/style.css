@@ -175,9 +175,6 @@ main{
 main h1{
     text-align: center;
 }
-main h5{
-    text-align: justify;
-}
 footer{
     background-color: #000000;
 }
@@ -200,6 +197,9 @@ footer details summary,footer details{
     }
     header div.nav > .head{
         width:100%;
+    }
+    h5{
+        font-size: 1.5rem;
     }
 }
 fieldset{
@@ -261,9 +261,8 @@ div.drop:hover > ul{
 /* center a div using top left */
 h5{
     position: absolute;
-    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
 }
 ul{
     font-size: 20px;
