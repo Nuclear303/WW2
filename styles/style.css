@@ -265,7 +265,7 @@ div.drop:hover > ul{
 .navigator *::selection{
     background-color:transparent;
 }
-/* center a div using top left */
+
 h5{
     position: absolute;
     left: 50%;
