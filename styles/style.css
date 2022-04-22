@@ -75,10 +75,17 @@ body{
     background-image: url(../media/background.png);
 
 }
-main, footer {
+header,footer {
     border: 1px solid #000000;
 }
-
+footer{
+    
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height:fit-content;
+    text-align: center;
+}
 summary{
     list-style: none;
 }
@@ -199,7 +206,7 @@ footer details summary,footer details{
         width:100%;
     }
     h5{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 }
 fieldset{
@@ -263,6 +270,7 @@ h5{
     position: absolute;
     left: 50%;
     transform: translate(-50%);
+    margin-bottom: 5%;
 }
 ul{
     font-size: 20px;
