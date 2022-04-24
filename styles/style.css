@@ -1,4 +1,7 @@
-@import url(../media/Schwabacher.otf);
+@font-face {
+    font-family: Wolfpack;
+    src: url(../media/WolfpackHalloweed-EaGOl.otf);
+}
 @keyframes appear{
     0%{
         opacity: 0;
@@ -107,7 +110,7 @@ header h1 a{
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    font-family:Schwabacher;
+    font-family:Wolfpack;
 }
 
 header nav.links{
@@ -204,7 +207,7 @@ footer details summary,footer details{
     color: white;
     text-align:center;
 }
-@media (max-width:67.5rem) {
+@media (max-width:62rem) {
     header div.drop{
         width: 100%;
     }
