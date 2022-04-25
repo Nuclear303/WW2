@@ -100,7 +100,7 @@ header h1{
     height: 3.2rem;
     text-align: center;
     font-size: 3rem;
-    animation: fontRise 1.5s 0.1s ease forwards;
+    animation: fontRise 1.5s ease forwards;
 }
 header h1 a:hover{
     animation: gradient 0.2s ease forwards;
