@@ -17,6 +17,8 @@ fieldset > div{
     float: right;
     font-size: x-large;
     width:55%;
+    margin-top:auto ;
+    margin-bottom:auto ;
 }
 table *{
     font-size: 1.25rem;
@@ -106,4 +108,3 @@ section>h2{
 table caption{
     color:rgb(197, 197, 197);
 }
-
