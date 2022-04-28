@@ -83,7 +83,7 @@ header,footer {
     border: 1px solid #000000;
 }
 main{
-    min-height: 800px;
+    min-height: 860px;
 }
 footer{
     
@@ -200,7 +200,6 @@ h5.mainText{
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    
 }
 footer details summary,footer details{
     font-weight: 900;
@@ -294,4 +293,3 @@ div.drop:hover > ul{
         font-size: 1.25rem;
     }
 }
-
