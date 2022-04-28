@@ -5,13 +5,18 @@ legend{
 }
 fieldset{
     display: flex;
+    border-radius: 10px;
 }
-fieldset > img{
+
+fieldset > a{
     float: left;
     margin-right: 5rem;
     width:45%;
     margin-top:auto ;
     margin-bottom:auto ;
+}
+a > img{
+    width:100%;
 }
 fieldset > div{
     float: right;
@@ -75,7 +80,7 @@ section>h2{
         font-size: 0.625rem;
         display:block;
     }
-    fieldset > img{
+    fieldset > a{
         float: none;
         display:block;
         margin-inline:auto;
