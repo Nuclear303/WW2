@@ -207,30 +207,7 @@ footer details summary,footer details{
     color: white;
     text-align:center;
 }
-@media (max-width:62rem) {
-    header div.drop{
-        width: 100%;
-    }
-    header div.nav > .head{
-        width:50%;
-    }
 
-}
-@media (max-width:48rem) {
-    header .head{
-        width:100%;
-    }
-    header div.nav > .head{
-        width:100%;
-    }
-    .mainText{
-        font-size: 1rem;
-        margin-bottom: 10%;
-    }
-    ul{
-        font-size:1rem;
-    }
-}
 fieldset{
     color: white;
 }
@@ -288,5 +265,33 @@ div.drop:hover > ul{
     background-color:transparent;
 }
 
-
+@media (max-width:62rem) {
+    header div.drop{
+        width: 100%;
+    }
+    header div.nav > .head{
+        width:50%;
+    }
+    .navigator h1{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:48rem) {
+    header .head{
+        width:100%;
+    }
+    header div.nav > .head{
+        width:100%;
+    }
+    .mainText{
+        font-size: 1rem;
+        margin-bottom: 10%;
+    }
+    ul{
+        font-size:1rem;
+    }
+    .navigator h1{
+        font-size: 1.25rem;
+    }
+}
 
