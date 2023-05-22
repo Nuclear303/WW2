@@ -72,26 +72,22 @@
 }
 html{
     overflow-x:hidden;
+    scroll-behavior: smooth;
 }
 body{
     padding: 0;
     margin:0;
     background-image: url(../media/background.png);
-
+    cursor: url(../media/cursor.svg), auto;
+}
+*{
+    cursor: url(../media/cursor.svg), auto;
 }
 header,footer {
     border: 1px solid #000000;
 }
 main{
     min-height: 860px;
-}
-footer{
-    
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height:fit-content;
-    text-align: center;
 }
 summary{
     list-style: none;
@@ -190,9 +186,7 @@ main{
 main h1{
     text-align: center;
 }
-footer{
-    background-color: #000000;
-}
+
 ul{
     font-size: 20px;
 }
@@ -201,11 +195,7 @@ h5.mainText{
     left: 50%;
     transform: translate(-50%);
 }
-footer details summary,footer details{
-    font-weight: 900;
-    color: white;
-    text-align:center;
-}
+
 
 fieldset{
     color: white;
@@ -242,6 +232,8 @@ div.drop:hover > ul{
     animation: appear 1s 0.1s forwards;
 }
 
+
+/* CONTENT TABLES */
 .navigator{
     background-color:gray;
     color:white;
@@ -264,6 +256,51 @@ div.drop:hover > ul{
     background-color:transparent;
 }
 
+/* FOOTER */
+.klasa{
+    text-align: center;
+}
+
+footer{
+    padding:5px;
+    background-color: #000000;
+    width: 100%;
+    text-align: center;
+    color:white;
+} 
+
+footer svg{
+    width:3vw;
+    aspect-ratio: 1/1;
+}
+
+footer a{
+    width:3vw;
+    aspect-ratio: 1/1;
+    text-decoration: none;
+    display: inline-block;
+    outline: 1px solid rgba(235,235,235,0.75);
+    outline-offset: 3px;
+    border-radius: 50%;
+    margin-inline:5px;
+}
+
+
+svg.bi-instagram{
+    width: 2.5vw;
+    margin:0.25vw;
+}
+
+.scrollUp{
+    display: none;
+    width:3vw;
+    aspect-ratio: 1/1;
+    position: fixed;
+    right: 1vw;
+    bottom: 5vh;
+}
+
+/* MEDIA QUERIES */
 @media (max-width:62rem) {
     header div.drop{
         width: 100%;
