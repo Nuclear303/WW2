@@ -10,6 +10,30 @@
         opacity: 1;
     }
 }
+@keyframes bigga { /*nazwa robocza*/
+    100%{
+        transform: scale(1.1);
+    }
+}
+@keyframes smolla {
+    0%{
+        width: 330px;
+        height:220px;
+    }
+    100%{
+        transform: scale(0.909091);
+    }
+}
+
+@keyframes smolla-galeria {
+    0%{
+        width:1080px;
+        height:220px;
+    }
+    100%{
+        transform: scale(0.909091);
+    }
+}
 @keyframes slideLeftToCenter{
     0%{
         transform: translateX(-100%);
@@ -285,6 +309,13 @@ footer a{
     margin-inline:5px;
 }
 
+footer hr{
+    margin-top:5px;
+}
+
+.mediaLinks{
+    padding: 10px;
+}
 
 svg.bi-instagram{
     width: 2.5vw;
@@ -329,4 +360,62 @@ svg.bi-instagram{
     .navigator h1{
         font-size: 1.25rem;
     }
+}
+
+/* VIDEO */
+
+video{
+    width:100%;
+    aspect-ratio: 16/9;
+}
+video + hr{
+    margin-bottom: 22px;
+} 
+/*  CONTENT */
+.content{
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:1100px;
+    gap:55px;
+}
+
+.buttons div{
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 300px;
+    height:200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: smolla .5s forwards;
+}
+
+.buttons div:last-of-type{
+    animation: smolla-galeria .5s forwards;
+}
+.buttons div:hover{
+    animation: bigga .5s forwards;
+}
+
+.buttons div:last-of-type{
+    width:1080px;
+}
+
+
+.buttons h2{
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.buttons div:last-of-type h2{
+    font-size:56px;   
 }
