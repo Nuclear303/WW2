@@ -1,3 +1,10 @@
+:root{
+    --black: #000000;
+    --dark-purple: #52057B;
+    --mid-purple: #892CDC;
+    --light-purple: #BC6FF1;
+}
+
 @font-face {
     font-family: Wolfpack;
     src: url(../media/WolfpackHalloweed-EaGOl.otf);
@@ -105,7 +112,7 @@ body{
     cursor: url(../media/cursor.svg), auto;
 }
 *{
-    cursor: url(../media/cursor.svg), auto;
+    cursor: url(../media/cursor.svg), auto !important;
 }
 header,footer {
     border: 1px solid #000000;
@@ -329,6 +336,11 @@ svg.bi-instagram{
     position: fixed;
     right: 1vw;
     bottom: 5vh;
+}
+
+.scrollUp svg{
+    width:3vw;
+    aspect-ratio: 1/1;
 }
 
 /* MEDIA QUERIES */
