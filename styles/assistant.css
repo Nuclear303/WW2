@@ -2,6 +2,7 @@
     position: fixed;
     left: 1vw;
     bottom: 5vh;
+    z-index: 1;
 }
 
 
@@ -64,7 +65,7 @@
     left:3vw;
     top:2vw;
     z-index: -9999;
-    padding:3px;
+    padding:5px;
 }
 
 .help div{
