@@ -24,6 +24,6 @@ document.addEventListener("DOMContentLoaded", _=>{
     })
 
     question.addEventListener("click", _=>{
-        location.assign("https://chat.openai.com")
+        window.open("https://chat.openai.com", "blank");
     })
 })
