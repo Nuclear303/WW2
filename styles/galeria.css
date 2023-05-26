@@ -16,7 +16,7 @@ figcaption{
     font-style: italic;
     font-weight: bold;
 }
-.person{
+figure.person{
     width: 12.5%;
 }
 @media (max-width: 67.5rem){
@@ -27,7 +27,7 @@ figcaption{
         height:25%;
         width: auto;
     }
-    .person{
+    figure.person{
         width: 25%;
     }
 }
@@ -35,11 +35,11 @@ figcaption{
     figure{
         width:100%;
     }
-    .person{
+    figure.person{
         width: 100%;
     }
 }
-img{
+img:not(.iks){
     width:100%;
     height:100%;
 }
