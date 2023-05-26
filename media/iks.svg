@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   viewBox="0 0 13.229167 13.229167"
+   version="1.1"
+   id="svg122"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="iks.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview124"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     showgrid="false"
+     showguides="true"
+     inkscape:zoom="11.313709"
+     inkscape:cx="-1.6351844"
+     inkscape:cy="18.915106"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <sodipodi:guide
+       position="0.66249188,15.490528"
+       orientation="1,0"
+       id="guide2415"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="12.567709,16.720427"
+       orientation="1,0"
+       id="guide2420"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-0.87746584,12.567709"
+       orientation="0,-1"
+       id="guide2422"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-4.648812,0.66042482"
+       orientation="0,-1"
+       id="guide2424"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-4.721159,6.6145835"
+       orientation="0,-1"
+       id="guide4852"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="6.6151004,12.567709"
+       orientation="1,0"
+       id="guide4854"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs119" />
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="fill:#bc6ff1;stroke-width:0.264583;fill-opacity:1"
+       id="path909"
+       cx="6.614583"
+       cy="6.614583"
+       r="6.614583" />
+    <ellipse
+       style="fill:#52057b;fill-opacity:1;stroke-width:0.297656"
+       id="path2429"
+       cx="6.6151004"
+       cy="6.6150999"
+       rx="5.9526086"
+       ry="5.9536424" />
+    <g
+       id="g4850"
+       transform="matrix(0.70724078,-0.70724078,0.70724078,0.70724078,-1.5545542,6.1526211)">
+      <rect
+         style="fill:#bc6ff1;fill-opacity:1;stroke-width:0.264583"
+         id="rect4824"
+         width="1.3063803"
+         height="9.558073"
+         x="4.7955732"
+         y="1.3229167"
+         ry="0.65319014" />
+      <rect
+         style="fill:#bc6ff1;fill-opacity:1;stroke-width:0.264583"
+         id="rect4824-8"
+         width="1.3063803"
+         height="9.558073"
+         x="-6.7551432"
+         y="0.66972685"
+         ry="0.65319014"
+         transform="rotate(-90)" />
+    </g>
+  </g>
+</svg>
