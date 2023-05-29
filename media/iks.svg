@@ -2,6 +2,8 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
+   width="50"
+   height="50"
    viewBox="0 0 13.229167 13.229167"
    version="1.1"
    id="svg122"
@@ -82,26 +84,23 @@
        cy="6.6150999"
        rx="5.9526086"
        ry="5.9536424" />
-    <g
-       id="g4850"
-       transform="matrix(0.70724078,-0.70724078,0.70724078,0.70724078,-1.5545542,6.1526211)">
-      <rect
-         style="fill:#bc6ff1;fill-opacity:1;stroke-width:0.264583"
-         id="rect4824"
-         width="1.3063803"
-         height="9.558073"
-         x="4.7955732"
-         y="1.3229167"
-         ry="0.65319014" />
-      <rect
-         style="fill:#bc6ff1;fill-opacity:1;stroke-width:0.264583"
-         id="rect4824-8"
-         width="1.3063803"
-         height="9.558073"
-         x="-6.7551432"
-         y="0.66972685"
-         ry="0.65319014"
-         transform="rotate(-90)" />
-    </g>
+    <rect
+       style="fill:#bc6ff1;fill-opacity:1;stroke-width:0.264633"
+       id="rect4824"
+       width="1.3066279"
+       height="9.5598841"
+       x="-0.65331393"
+       y="4.5744915"
+       ry="0.65331393"
+       transform="rotate(-45)" />
+    <rect
+       style="fill:#bc6ff1;fill-opacity:1;stroke-width:0.264633"
+       id="rect4824-8"
+       width="1.3066279"
+       height="9.5598841"
+       x="-10.007748"
+       y="-4.779942"
+       ry="0.65331393"
+       transform="rotate(-135)" />
   </g>
 </svg>

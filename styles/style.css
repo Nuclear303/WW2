@@ -431,3 +431,9 @@ video + hr{
 .buttons div:last-of-type h2{
     font-size:56px;   
 }
+
+.buttons div:nth-of-type(2){
+    padding-bottom: 30px;
+    align-items: end;
+    background-image: url(../media/uzbrojenie2.png);
+}
