@@ -432,8 +432,58 @@ video + hr{
     font-size:56px;   
 }
 
+.buttons div:nth-of-type(1){
+    padding-bottom: 30px;
+    align-items: end;
+    background-image: url();
+}
+
 .buttons div:nth-of-type(2){
     padding-bottom: 30px;
     align-items: end;
     background-image: url(../media/uzbrojenie2.png);
+}
+
+.buttons div:nth-of-type(3){
+    padding-bottom: 30px;
+    align-items: end;
+    background-image: url();
+}
+
+.buttons div:nth-of-type(4){
+    padding-bottom: 30px;
+    align-items: end;
+    background-image: url();
+}
+
+.buttons div:nth-of-type(5){
+    padding-bottom: 30px;
+    align-items: end;
+    background-image: url();
+}
+
+.buttons div:nth-of-type(6){
+    padding-bottom: 30px;
+    align-items: end;
+    background-image: url();
+}
+
+.buttons div:nth-of-type(7){
+    padding-bottom: 30px;
+    align-items: end;
+    background-image: url();
+}
+
+#bitwy{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../media/raising_the_flag.png);
+}
+
+#uzbrojenie{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../media/schwerer_gustav.png);
 }
