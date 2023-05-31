@@ -1,0 +1,66 @@
+@keyframes cursorSlideIn {
+  0%{
+    left:-10vw;
+  }
+  100%{
+    left:0%;
+  }
+}
+
+@keyframes cursorSlideOut {
+  0%{
+    left:0%;
+  }
+  100%{
+    left:-10vw;
+  }
+}
+
+.cursors{
+  position: fixed;
+  left:-10vw;
+  top:25%;
+  width:13vw;
+  height: 10vw;
+  display: flex;
+  align-items: center;
+}
+
+.cursor{
+  width:50%;
+  aspect-ratio: 1/1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cursor:nth-of-type(1){
+  background-image: url(../media/bullet.svg);
+}
+
+.cursor:nth-of-type(2){
+  background-image: url(../media/bullet2.svg);
+}
+
+.cursor:nth-of-type(4){
+  background-size: contain;
+  background-image: url(../media/default.png);
+}
+
+.selection{
+  width:10vw;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--dark-purple);
+}
+
+.menuSlider{
+  background-color: var(--mid-purple);
+  background-image: url(../media/default.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  width:3vw;
+  height: 5vw;
+}
