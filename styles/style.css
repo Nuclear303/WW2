@@ -109,10 +109,6 @@ body{
     padding: 0;
     margin:0;
     background-image: url(../media/background.png);
-    cursor: url(../media/cursor.svg), auto;
-}
-*{
-    cursor: url(../media/cursor.svg), auto !important;
 }
 header,footer {
     border: 1px solid #000000;
@@ -385,7 +381,7 @@ video + hr{
 } 
 /*  CONTENT */
 .content{
-    height: 75vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
 }
@@ -395,6 +391,7 @@ video + hr{
     flex-wrap: wrap;
     justify-content: center;
     width:1100px;
+    height:100%;
     gap:55px;
 }
 
@@ -409,6 +406,8 @@ video + hr{
     background-repeat: no-repeat;
     background-size: cover;
     animation: smolla .5s forwards;
+    padding-bottom: 30px;
+    align-items: end;
 }
 
 .buttons div:last-of-type{
@@ -433,57 +432,30 @@ video + hr{
 }
 
 .buttons div:nth-of-type(1){
-    padding-bottom: 30px;
-    align-items: end;
     background-image: url();
 }
 
 .buttons div:nth-of-type(2){
-    padding-bottom: 30px;
-    align-items: end;
     background-image: url(../media/uzbrojenie2.png);
 }
 
 .buttons div:nth-of-type(3){
-    padding-bottom: 30px;
-    align-items: end;
     background-image: url();
 }
 
 .buttons div:nth-of-type(4){
-    padding-bottom: 30px;
-    align-items: end;
     background-image: url();
 }
 
 .buttons div:nth-of-type(5){
-    padding-bottom: 30px;
-    align-items: end;
-    background-image: url();
+    background-image: url(../media/smalloty.png);
 }
 
 .buttons div:nth-of-type(6){
-    padding-bottom: 30px;
-    align-items: end;
     background-image: url();
 }
 
 .buttons div:nth-of-type(7){
-    padding-bottom: 30px;
-    align-items: end;
     background-image: url();
 }
 
-#bitwy{
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(../media/raising_the_flag.png);
-}
-
-#uzbrojenie{
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(../media/schwerer_gustav.png);
-}

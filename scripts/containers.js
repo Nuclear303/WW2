@@ -65,13 +65,13 @@ window.addEventListener('scroll', _=> {
             } else {
               galeria.style.opacity = '0';
             }
-            bitwy.style.transition = "opacity 3s";
-            uzbrojenie.style.transition = "opacity 3s";
-            postacie.style.transition = "opacity 3s";
-            czolgi.style.transition = "opacity 3s";
-            samoloty.style.transition = "opacity 3s";
-            okrety.style.transition = "opacity 3s";
-            galeria.style.transition = "opacity 3s";
+            bitwy.style.transition = "opacity 2.5s";
+            uzbrojenie.style.transition = "opacity 2.5s";
+            postacie.style.transition = "opacity 2.5s";
+            czolgi.style.transition = "opacity 2.5s";
+            samoloty.style.transition = "opacity 2.5s";
+            okrety.style.transition = "opacity 2.5s";
+            galeria.style.transition = "opacity 2.5s";
     },500)
   });
   

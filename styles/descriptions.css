@@ -8,6 +8,18 @@
 }
 
 .pageSummary{
+    color:white;
+    text-shadow:
+        -1px -1px 0 #000,
+        0   -1px 0 #000,
+        1px -1px 0 #000,
+        1px  0   0 #000,
+        1px  1px 0 #000,
+        0    1px 0 #000,
+        -1px  1px 0 #000,
+        -1px  0   0 #000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:grayscale;
     border:1px solid black;
     border-radius: 15px;
     padding:10px;
@@ -15,13 +27,25 @@
     aspect-ratio: 8/3;
     position: relative;
     scroll-margin: 308px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.pageSummary p{
+.p{
+    position: relative;
     float:right;
     height:100%;
     width:50%;
+}
+.pageSummary p{
+    font-weight: 600;
+
     font-size: large;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
 }
 
 .pageSummary button{
@@ -40,4 +64,18 @@
     text-align:center;
     font-weight: 600;
     font-size: 48px;
+    display: inline-block;
+}
+
+#bitwy{
+    margin-top:30px;
+    background-image: url(../media/raising_the_flag.png);
+}
+
+#uzbrojenie{
+    background-image: url(../media/schwerer_gustav.png);
+}
+
+#samoloty{  
+    background-image: url(../media/samoloty-draft3.png);
 }
