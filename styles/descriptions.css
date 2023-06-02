@@ -79,3 +79,17 @@
 #samoloty{  
     background-image: url(../media/samoloty-draft3.png);
 }
+
+#bitwy{
+    background-image: url(../media/bitwy.png);
+}
+
+#okrety{
+    background-image: url(../media/okrety.png);
+}
+
+#galeria{
+    background-size: auto;
+    background-position: bottom;
+    background-image: url(../media/album.png);
+}
