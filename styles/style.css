@@ -147,8 +147,8 @@ header .head{
     width:20%;
     height: 2.5rem;
     border-radius: 0;
-    background-color:gray;
-    color:white;
+    background-color:var(--black);
+    color:var(--light-purple);
     padding: 0.625rem;
     margin: 0;
     line-height:1.25rem;
@@ -170,27 +170,13 @@ header div.nav-left{
 header div.nav-right{
     animation: slideRightToCenter 1s 0.1s forwards ease;
 }
-header a.head::before{
-    content: " - ";
-}
-header a.head::after{
-    content: " - ";
-}
 
 header a.head:visited, div.drop a:visited{
-    background-color: rgb(60, 60, 60);
+    background-color:var(--dark-purple);
 }
 
 header a.head:hover{
-    color: white;
-}
-
-header a.head:hover::before{
-    content: " -- ";
-}
-
-header a.head:hover::after{
-    content: " -- ";
+    color: var(--mid-purple);
 }
 
 header a.head:active{
@@ -200,13 +186,6 @@ header a.head:active{
     background-color: black;
 }
 
-header a.head:active::before{
-    content: " --- ";
-}
-
-header a.head:active::after{
-    content: " --- ";
-}
 main{
     color: white;
 }
@@ -226,11 +205,16 @@ h5.mainText{
 
 fieldset{
     color: white;
+    border: 5px solid var(--dark-purple) !important;
+}
+
+fieldset img{
+    border-radius: 15px;
 }
 
 div.drop{
     padding:0.625rem 0 0.625rem 0;
-    color:white;
+    color:var(--light-purple);
     opacity: 0;
     animation: appear 1.5s 0.5s forwards;
     z-index: 9999;
@@ -245,10 +229,11 @@ div.drop li{
 }
 div.drop li > a{
     text-decoration: none;
-    color: white;
+    color: var(--light-purple);
 }
+
 div.drop > ul{
-    background-color:gray; 
+    background-color:var(--black); 
     opacity: 0;
     display:none;
     padding: 0.3125rem;
@@ -262,22 +247,24 @@ div.drop:hover > ul{
 
 /* CONTENT TABLES */
 .navigator{
-    background-color:gray;
-    color:white;
+    background-color:var(--black);
+    color:var(--light-purple);
     padding: 0.3125rem;
     width:auto;
-    border:3px ridge white;
+    border:3px solid var(--mid-purple);
+    border-radius: 15px;
     display:inline-block;
     position: sticky;
     top:20px;
+    z-index: 3;
 }
 .navigator a{
-    color:white;
+    color:var(--light-purple);
     text-decoration: none;
 }
 
 .navigator a:hover{
-    color:rgb(200, 200, 200);
+    color:var(--mid-purple);
 }
 .navigator *::selection{
     background-color:transparent;
@@ -330,7 +317,7 @@ svg.bi-instagram{
     width:3vw;
     aspect-ratio: 1/1;
     position: fixed;
-    right: 1vw;
+    right: 2.5vw;
     bottom: 5vh;
 }
 
@@ -408,6 +395,15 @@ video + hr{
     animation: smolla .5s forwards;
     padding-bottom: 30px;
     align-items: end;
+    text-shadow:
+        -1px -1px 0 #000,
+        0   -1px 0 #000,
+        1px -1px 0 #000,
+        1px  0   0 #000,
+        1px  1px 0 #000,
+        0    1px 0 #000,
+        -1px  1px 0 #000,
+        -1px  0   0 #000;
 }
 
 .buttons div:last-of-type{
@@ -440,11 +436,13 @@ video + hr{
 }
 
 .buttons div:nth-of-type(3){
-    background-image: url();
+    background-size: 110%;
+    background-position: center;
+    background-image: url(../media/karta.jpg);
 }
 
 .buttons div:nth-of-type(4){
-    background-image: url();
+    background-image: url(../media/czolgi-button.png);
 }
 
 .buttons div:nth-of-type(5){
@@ -456,6 +454,9 @@ video + hr{
 }
 
 .buttons div:nth-of-type(7){
-    background-image: url();
+    align-items: center;
+    padding:0;
+    background-position: center;
+    background-image: url(../media/kolaz.png);
 }
 
