@@ -1,6 +1,6 @@
 @keyframes cursorSlideIn {
   0%{
-    left:-10vw;
+    left:-5vw;
   }
   100%{
     left:0%;
@@ -12,22 +12,22 @@
     left:0%;
   }
   100%{
-    left:-10vw;
+    left:-5vw;
   }
 }
 
 .cursors{
   position: fixed;
-  left:-10vw;
-  top:25%;
-  width:13vw;
-  height: 10vw;
+  left:-5vw;
+  top:32.5%;
+  width:8vw;
+  height: 8vw;
   display: flex;
   align-items: center;
 }
 
 .cursor{
-  width:50%;
+  width:100%;
   aspect-ratio: 1/1;
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,25 +42,33 @@
   background-image: url(../media/bullet2.svg);
 }
 
+.cursor:nth-of-type(3){
+  background-image: url(../media/bomb.svg);
+}
+
 .cursor:nth-of-type(4){
-  background-size: contain;
-  background-image: url(../media/default.png);
+  background-image: url(../media/default.svg);
 }
 
 .selection{
-  width:10vw;
+  padding:5px;
+  width:5vw;
   aspect-ratio: 1/1;
   display: flex;
+  gap:5px;
   flex-wrap: wrap;
   background-color: var(--dark-purple);
 }
 
 .menuSlider{
   background-color: var(--mid-purple);
-  background-image: url(../media/default.png);
+  background-image: url(../media/default.svg);
   background-repeat: no-repeat;
-  background-size: 50%;
   background-position: center;
   width:3vw;
-  height: 5vw;
+  height: 4vw;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border:2px solid white;
+  border-left: none;
 }
