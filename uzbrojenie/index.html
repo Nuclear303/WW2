@@ -8,8 +8,15 @@
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/pojazdy.css">
     <link rel="stylesheet" href="../styles/assistant.css">
+    <link rel="stylesheet" href="../styles/cursor.css">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script>
+        if(localStorage.getItem('cursor') == undefined){localStorage.setItem('cursor', 1);}
+        localStorage.setItem('shown', 0)
+        localStorage.setItem('folder', "../media");
+        </script>
+    <script defer src="../scripts/cursor.js"></script>
     <script src="../scripts/scrollUp.js"></script>
     <script src="../scripts/assistant.js"></script>
 </head>
@@ -54,7 +61,7 @@
             </div>
         </div>
         <article id="zimmerit">
-            <fieldset class="border p-3 border-5 border-light m-3">
+            <fieldset class="p-3 m-3">
                 <legend class="w-auto p-2 float-none">Zimmerit</legend>
                 <a target="_blank" href="../media/Tiger_zimmerit.jpg">
                     <img loading="lazy" src="../media/Tiger_zimmerit.jpg" alt="Tiger II z Zimmeritem">
@@ -94,7 +101,7 @@
             </fieldset>    
         </article>     
         <article id="flak">
-            <fieldset class="border p-3 border-5 border-light m-3">
+            <fieldset class="p-3 m-3">
                 <legend class="w-auto p-2 float-none">8.8cm FlaK 41</legend>
                 <a target="_blank" href="../media/Flak.jpg">
                     <img loading="lazy" src="../media/Flak.jpg" alt="8.8cm Flak w Świnoujściu">
@@ -118,7 +125,7 @@
             </fieldset> 
         </article>
         <article id="pzsch">
-            <fieldset class="border p-3 border-5 border-light m-3">
+            <fieldset class="p-3 m-3">
                 <legend class="w-auto p-2 float-none">Pervitin</legend>
                 <a target="_blank" href="../media/panzerschokolade.jpg">
                     <img loading="lazy" src="../media/panzerschokolade.jpg" alt="Panzerschokolade">
@@ -133,7 +140,7 @@
             </fieldset> 
         </article>
         <article id="nuke">
-            <fieldset class="border p-3 border-5 border-light m-3">
+            <fieldset class="p-3 m-3">
                 <legend class="w-auto p-2 float-none">Amerykańskie bomby atomowe</legend>
                 <a href="../media/Little_boy.jpg">
                     <img loading="lazy" src="../media/Little_boy.jpg" alt="Bomba Little Boy">
@@ -203,6 +210,17 @@
     </div>
     <div class="scrollUp" title="Przewiń do góry">
         <img src="../media/strzalka.svg">
+    </div>
+    <div class="cursors">
+        <div class="selection">
+            <div class="cursor" onclick="localStorage.setItem('cursor', 1);location.reload();"></div>
+            <div class="cursor" onclick="localStorage.setItem('cursor', 2);location.reload();"></div>
+            <div class="cursor" onclick="localStorage.setItem('cursor', 3);location.reload();"></div>
+            <div class="cursor" onclick="localStorage.setItem('cursor', 0);location.reload();"></div>
+        </div>
+        <div class="menuSlider">
+
+        </div>
     </div>
     <footer>
         <div class="mediaLinks">

@@ -14,12 +14,12 @@
     <script>
     if(localStorage.getItem('cursor') == undefined){localStorage.setItem('cursor', 1);}
     localStorage.setItem('shown', 0)
+    localStorage.setItem('folder', "./media");
     </script>
     <script defer src="./scripts/cursor.js"></script>
     <script src="./scripts/scrollUp.js"></script>
     <script src="./scripts/assistant.js"></script>
     <script src="./scripts/containers.js"></script>
-    <style></style>
 </head>
 <body>
     <header>
@@ -52,10 +52,10 @@
             <div class="buttons">
                 <div onclick="location.assign('#bitwy')"><h2>Bitwy</h2></div>
                 <div onclick="location.assign('#uzbrojenie')"><h2>Uzbrojenie</h2></div>
-                <div onclick="location.assign('#postacie')"><h2>Postacie</h2></div>
-                <div onclick="location.assign('#czolgi')"><h2>Czołgi</h2></div>
-                <div onclick="location.assign('#samoloty')"><h2>Samoloty</h2></div>
-                <div onclick="location.assign('#okrety')"><h2>Okręty</h2></div>
+                <div onclick="location.assign('#postacie'); new Audio('./media/hurhil.mp3').play()"><h2>Postacie</h2></div>
+                <div onclick="location.assign('#czolgi'); new Audio('./media/czolgi.wav').play()"><h2>Czołgi</h2></div>
+                <div onclick="location.assign('#samoloty'); new Audio('./media/samoloty.wav').play();"><h2>Samoloty</h2></div>
+                <div onclick="location.assign('#okrety'); new Audio('./media/okrety.wav').play();"><h2>Okręty</h2></div>
                 <div onclick="location.assign('#galeria')"><h2>Galeria</h2></div>
             </div>
         </div>
@@ -80,7 +80,10 @@
                 <h2>Uzbrojenie</h2>
                 <div class="p">
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos assumenda temporibus distinctio hic natus, nemo quae ab ullam aliquid numquam culpa vel officiis ex repellendus nam placeat consequatur sequi error!
+                        Podczas Drugiej Wojny Światowej, zaangażowane strony wykorzystywały znacznie zaawansowane technologicznie uzbrojenie.
+                        Konflikt ten przyniósł znaczące postępy w dziedzinie broni, takiej jak samoloty bombowe, czołgi, okręty wojenne i broń palna.
+                        Wykorzystanie nowoczesnych technologii i innowacyjnych rozwiązań technicznych miało ogromne znaczenie dla wyniku bitew i przyczyniło się do dynamicznego rozwoju militariów.
+                        Innowacje w uzbrojeniu stanowiły ważną część strategii wojennych i miały wpływ na kształtowanie taktyk i strategii wojskowych w czasie wojny.
                     </p>
                 </div>
                 <button onclick="location.assign('./uzbrojenie')">Czytaj dalej...</button>
@@ -126,7 +129,9 @@
                 <h2>Postacie</h2>
                 <div class="p">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda error, ducimus dolor quidem, eius maiores voluptatibus praesentium officiis placeat nostrum eos ea quia fugiat tempore, totam quos perferendis perspiciatis illum.
+                        Podczas Drugiej Wojny Światowej, trzy znaczące postaci, znane jako Wielka Trójka, odegrały kluczową rolę w kształtowaniu wydarzeń globalnych.
+                        Jednak poza nimi, warto zwrócić uwagę na takie postacie jak Adolf Galland, wybitny as lotniczy z Niemiec, oraz Heinrich Himmler, wpływowy członek nazistowskiej partii i jeden z głównych architektów systemu koncentracyjnego. Ich udział w wojnie, zarówno jako przywódcy jak i żołnierze, wpływał na losy konfliktu i miał ogromne znaczenie dla przebiegu wydarzeń.
+                        Informacje o nich, jak i o innych postaciach warto zobaczyć na naszej stronie.
                     </p>
                 </div>
                 <button onclick="location.assign('./postacie')">Czytaj dalej...</button>
@@ -135,7 +140,9 @@
                 <h2>Galeria</h2>
                 <div class="p">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda error, ducimus dolor quidem, eius maiores voluptatibus praesentium officiis placeat nostrum eos ea quia fugiat tempore, totam quos perferendis perspiciatis illum.
+                        Podsumowaniem naszej strony jest wielka galeria ze zdjęciami pojazdów, ważnych postaci oraz przełomowych wydarzeń, które ukształtowały naszą teraźniejszość.
+                        Przez przeglądanie tych fotografii będziesz mógł lepiej zrozumieć skalę i wpływ tego globalnego konfliktu.
+                        Zapraszamy do zanurzenia się w historii i odkrywania wizualnych świadectw tamtych czasów na naszej stronie.
                     </p>
                 </div>
                 <button onclick="location.assign('./galeria')">Czytaj dalej...</button>
@@ -144,7 +151,7 @@
         <br>
         <hr>
         <br>
-        <audio src=""></audio>
+        <audio></audio>
     </main>
     <div class="assistant">
         <img class="iks" src="./media/iks.svg" alt="">

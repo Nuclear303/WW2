@@ -7,11 +7,18 @@
     <link rel="shortcut icon" href="../../media/ww2-logo.svg">
     <link rel="stylesheet" href="../../styles/style.css">
     <link rel="stylesheet" href="../../styles/pojazdy.css">
+    <link rel="stylesheet" href="../../styles/cursor.css">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="../../scripts/scrollUp.js"></script>
     <link rel="stylesheet" href="../../styles/assistant.css">
     <script src="../../scripts/assistant.js"></script>
+    <script>
+        if(localStorage.getItem('cursor') == undefined){localStorage.setItem('cursor', 1);}
+        localStorage.setItem('shown', 0)
+        localStorage.setItem('folder', "../../media");
+        </script>
+    <script defer src="../../scripts/cursor.js"></script>
 </head>
 <body>
     <header>
@@ -66,7 +73,7 @@
         <section id="ru">
             <h2 style="text-align: center; color: red;" class="mt-3">Czołgi Rosyjskie <img loading="lazy" src="../../media/Flag_of_the_Soviet_Union.svg" width="5%" height="5%" alt=""></h2>
             <article id="t34">
-                <fieldset class="border p-3 border-5 border-light m-3">
+                <fieldset class="p-3 m-3">
                     <legend class="w-auto p-2 float-none "  >T-34</legend>
                     <a target="_blank" href="../../media/T-34.png">
                         <img loading="lazy" src="../../media/T-34.png" alt="T-34-85">
@@ -91,7 +98,7 @@
                 </fieldset>
             </article>
             <article id="t3485">
-                <fieldset class="border p-3 border-5 border-light m-3">
+                <fieldset class="p-3 m-3">
                     <legend class="w-auto p-2 float-none "  >T-34-85</legend>
                     <a target="_blank" href="../../media/t-34-85.png">
                         <img loading="lazy"  src="../../media/t-34-85.png" alt="T-34-85">
@@ -116,7 +123,7 @@
                 </fieldset>
             </article>
             <article id="is2">
-                <fieldset class="border p-3 border-5 border-light m-3">
+                <fieldset class="p-3 m-3">
                     <legend class="w-auto p-2 float-none "  >IS-2</legend>
                     <a target="_blank" href="../../media/IS-2.png">
                         <img loading="lazy" src="../../media/IS-2.png" alt="IS-2">
@@ -144,7 +151,7 @@
         <section id="ger">
             <h2 style="text-align: center; color: orange;" class="mt-3" >Czołgi Niemieckie <img loading="lazy" src="../../media/Flag_of_Germany_(1935–1945).svg" width="5%" height="5%" alt=""></h2>
             <article id="panther">
-                <fieldset class="border p-3 border-5 border-light m-3">
+                <fieldset class="p-3 m-3">
                     <legend class="w-auto p-2 float-none "  >Panther</legend>
                     <a target="_blank" href="../../media/Panther-aufs-G.png">
                         <img loading="lazy" src="../../media/Panther-aufs-G.png" alt="Panther Aufs-G">
@@ -170,7 +177,7 @@
                 </fieldset>
             </article>
             <article id="tiger">
-                <fieldset class="border p-3 border-5 border-light m-3">
+                <fieldset class="p-3 m-3">
                     <legend class="w-auto p-2 float-none "  >Tiger I</legend>
                     <a href="../../media/Tiger-I.png" target="_blank">
                         <img loading="lazy" src="../../media/Tiger-I.png" alt="Tiger I">
@@ -199,7 +206,7 @@
         <section id="us">
             <h2 style="text-align: center; color: rgb(67, 80, 255);" class="mt-3" >Czołgi Amerykańskie <img loading="lazy" src="../../media/Flag_of_the_United_States_(Pantone).svg" width="5%" height="5%" alt=""></h2> 
             <article id="m4">
-                <fieldset class="border p-3 border-5 border-light m-3">
+                <fieldset class="p-3 m-3">
                     <legend class="w-auto p-2 float-none "  >M4 Sherman</legend>
                     <a href="../../media/M4-Sherman.png" target="_blank">
                         <img loading="lazy" src="../../media/M4-Sherman.png" alt="M4 Sherman">
@@ -227,7 +234,7 @@
                 </fieldset>
             </article>
             <article id="m26">
-                <fieldset class="border p-3 border-5 border-light m-3">
+                <fieldset class="p-3 m-3">
                     <legend class="w-auto p-2 float-none "  >M26 "Pershing"</legend>
                     <a href="../../media/M26.png" target="_blank">
                         <img loading="lazy" src="../../media/M26.png" alt="M26 Pershing">
@@ -278,6 +285,17 @@
     </div>
     <div class="scrollUp" title="Przewiń do góry">
         <img src="../../media/strzalka.svg">
+    </div>
+    <div class="cursors">
+        <div class="selection">
+            <div class="cursor" onclick="localStorage.setItem('cursor', 1);location.reload();"></div>
+            <div class="cursor" onclick="localStorage.setItem('cursor', 2);location.reload();"></div>
+            <div class="cursor" onclick="localStorage.setItem('cursor', 3);location.reload();"></div>
+            <div class="cursor" onclick="localStorage.setItem('cursor', 0);location.reload();"></div>
+        </div>
+        <div class="menuSlider">
+
+        </div>
     </div>
     <footer>
         <div class="mediaLinks">
