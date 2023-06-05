@@ -77,7 +77,7 @@
 }
 
 #samoloty{  
-    background-image: url(../media/samoloty-draft3.png);
+    background-image: url(../media/samoloty.png);
 }
 
 #bitwy{
@@ -90,7 +90,11 @@
 
 #czolgi{
     background-size: contain;
-    background-image: url(../media/2023-06-02.png);
+    background-image: url(../media/czolgi.png);
+}
+
+#postacie{
+    background-image: url(../media/postacie.png);
 }
 
 #galeria{
