@@ -428,7 +428,7 @@ video + hr{
 }
 
 .buttons div:nth-of-type(1){
-    background-image: url();
+    background-image: url(../media/bitwy-button.png);
 }
 
 .buttons div:nth-of-type(2){
@@ -450,7 +450,7 @@ video + hr{
 }
 
 .buttons div:nth-of-type(6){
-    background-image: url();
+    background-image: url(../media/okrety-button.png);
 }
 
 .buttons div:nth-of-type(7){
