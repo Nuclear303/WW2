@@ -88,6 +88,11 @@
     background-image: url(../media/okrety.png);
 }
 
+#czolgi{
+    background-size: contain;
+    background-image: url(../media/2023-06-02.png);
+}
+
 #galeria{
     background-size: auto;
     background-position: bottom;
