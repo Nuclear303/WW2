@@ -34,7 +34,7 @@
 
 @keyframes smolla-galeria {
     0%{
-        width:100vw;
+        width:90vw;
         height:20vw;
     }
     100%{
@@ -407,16 +407,12 @@ video + hr{
 }
 
 .buttons div:last-of-type{
+    width:90vw;
     animation: smolla-galeria .5s forwards;
 }
 .buttons div:hover{
     animation: bigga .5s forwards;
 }
-
-.buttons div:last-of-type{
-    width:100vw;
-}
-
 
 .buttons h2{
     font-weight: 600;
