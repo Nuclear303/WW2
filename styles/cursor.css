@@ -65,10 +65,17 @@
   background-image: url(../media/default.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size:100%;
   width:3vw;
   height: 4vw;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   border:2px solid white;
   border-left: none;
+}
+
+@media (max-width:1000px) {
+  .cursors{
+      display: none !important;
+  }
 }

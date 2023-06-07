@@ -24,18 +24,18 @@
 }
 @keyframes smolla {
     0%{
-        width: 330px;
-        height:220px;
+        width: 30vw;
+        height:20vw;
     }
     100%{
         transform: scale(0.909091);
-    }
+    }   
 }
 
 @keyframes smolla-galeria {
     0%{
-        width:1080px;
-        height:220px;
+        width:100vw;
+        height:20vw;
     }
     100%{
         transform: scale(0.909091);
@@ -321,7 +321,7 @@ svg.bi-instagram{
     bottom: 5vh;
 }
 
-.scrollUp svg{
+.scrollUp img{
     width:3vw;
     aspect-ratio: 1/1;
 }
@@ -368,7 +368,7 @@ video + hr{
 } 
 /*  CONTENT */
 .content{
-    height: 80vh;
+    height: fit-content;
     display: flex;
     justify-content: center;
 }
@@ -377,7 +377,7 @@ video + hr{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width:1100px;
+    width:105vw;
     height:100%;
     gap:55px;
 }
@@ -385,8 +385,8 @@ video + hr{
 .buttons div{
     border: 1px solid black;
     border-radius: 25px;
-    width: 300px;
-    height:200px;
+    width: 27vw;
+    height:17vw ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -414,7 +414,7 @@ video + hr{
 }
 
 .buttons div:last-of-type{
-    width:1080px;
+    width:100vw;
 }
 
 
@@ -424,7 +424,7 @@ video + hr{
 }
 
 .buttons div:last-of-type h2{
-    font-size:56px;   
+    font-size:3rem;   
 }
 
 .buttons div:nth-of-type(1){
@@ -460,3 +460,16 @@ video + hr{
     background-image: url(../media/kolaz.png);
 }
 
+@media (max-width:800px){
+    .buttons div{
+        width:100%;
+        height:20vh;
+    }
+    .scrollUp img{
+
+        width: 10vw !important;
+        position: fixed;
+        right: 5vw;
+        bottom: 5vh;
+    }
+}
